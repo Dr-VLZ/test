@@ -27,6 +27,15 @@ h1 {
 }
 p { font-size: 17px; }
 .author { margin-top: 35px; font-style: italic; }
+
+.article-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  border-radius: 5px;
+}
+
 @media (max-width: 600px) {
   main { margin: 20px auto; padding: 0 18px; }
   h1 { font-size: 1.8rem; }
@@ -36,6 +45,12 @@ p { font-size: 17px; }
 <body>
 <main>
   <h1>Ceci est un texte</h1>
+
+  <!-- IMAGE -->
+  <img src="images/Qin Shihuang.png"
+       alt="Description de la photo"
+       class="article-image">
+
   <p>Bonjour à tous voilà un texte très gentil
   pour tester la fonctionnalité.</p>
   <p>Merci</p>
