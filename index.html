@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ceci est un texte</title>
+
 <style>
 body {
   margin: 0;
@@ -13,11 +14,13 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.7;
 }
+
 main {
   max-width: 820px;
   margin: 45px auto;
   padding: 0 24px;
 }
+
 h1 {
   font-family: Georgia, serif;
   font-size: 2.2rem;
@@ -25,36 +28,61 @@ h1 {
   border-bottom: 1px solid #a2a9b1;
   padding-bottom: 12px;
 }
-p { font-size: 17px; }
-.author { margin-top: 35px; font-style: italic; }
 
+p {
+  font-size: 17px;
+}
+
+.author {
+  margin-top: 35px;
+  font-style: italic;
+}
+
+/* Image positioning and size */
 .article-image {
-  max-width: 100%;
+  width: 220px;
   height: auto;
-  display: block;
-  margin: 25px auto;
+  float: right;
+  margin: 5px 0 20px 25px;
   border-radius: 5px;
 }
 
+/* Mobile display */
 @media (max-width: 600px) {
-  main { margin: 20px auto; padding: 0 18px; }
-  h1 { font-size: 1.8rem; }
+  main {
+    margin: 20px auto;
+    padding: 0 18px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .article-image {
+    width: 130px;
+  }
 }
 </style>
 </head>
+
 <body>
 <main>
+
   <h1>Ceci est un texte</h1>
 
-  <!-- IMAGE -->
- <img src="Qin%20Shihuang.png"
-     alt="Qin Shihuang"
-     class="article-image">
+  <img src="Qin%20Shihuang.png"
+       alt="Qin Shihuang"
+       class="article-image">
 
-  <p>Bonjour à tous voilà un texte très gentil
-  pour tester la fonctionnalité.</p>
+  <p>
+    Bonjour à tous voilà un texte très gentil
+    pour tester la fonctionnalité.
+  </p>
+
   <p>Merci</p>
+
   <p class="author">Emmanuel Macron</p>
+
 </main>
 </body>
 </html>
